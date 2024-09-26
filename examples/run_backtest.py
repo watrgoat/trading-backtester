@@ -1,17 +1,17 @@
 # examples/run_backtest.py
 from src.data_handler import DataHandler
-from src.stratagies.my_strategy import MyCustomStrategy
 from src.portfolio import Portfolio
 from src.execution_handler import ExecutionHandler
 from src.logger import Logger
 from src.backtester import Backtester
 from src.performance import Performance
 from src.visualizer import Visualizer
+from my_strategy import MovingAverageStrategy
 import pandas as pd
 
 # Initialize components
 data_handler = DataHandler(ticker='AAPL', start_date='2020-01-01', end_date='2023-01-01')
-strategy = MyCustomStrategy()
+strategy = MovingAverageStrategy()
 portfolio = Portfolio(initial_capital=100000)
 execution_handler = ExecutionHandler(transaction_cost=0.001)
 logger = Logger()
