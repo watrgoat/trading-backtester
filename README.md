@@ -5,41 +5,6 @@ The Algorithmic Trading Backtester is a modular, extensible backtesting framewor
 
 The goal of this project is to create a backtester that emphasizes **modularity**, **scalability**, and **flexibility**, giving users full control over their strategies while offering powerful tools to analyze results through in-depth reports and visualizations.
 
-## Key Features
-1. **Modularity (Core Focus)**
-    - The entire package is built around the concept of modularity, allowing users to swap out and customize individual components (such as strategies, risk management, data handlers, and execution logic) without changing the core code.
-    - **Component-Based Architecture**: Design every major part of the backtester as separate modules.
-    - **Clear Interfaces**: Use abstract classes and interfaces so users can implement their own logic.
-    - **Plugin-Like Structure**: Integrate external libraries and user-defined customizations seamlessly.
-
-2. **In-Depth Reports and Visualizations**
-    - Generate customizable performance reports and interactive visualizations to deeply analyze strategy performance.
-    - **Customizable Reports**: Define metrics like Sharpe ratio, volatility, and max drawdown.
-    - **Interactive Visualizations**: Utilize libraries like Plotly or Bokeh for visual exploration of results.
-    - **Trade-Level Analysis**: Break down individual trades, win/loss ratios, and average trade durations.
-
-3. **Multi-Asset Class and Portfolio-Level Backtesting**
-    - Support for strategies that operate across multiple asset classes (stocks, crypto, forex, futures) and allow dynamic portfolio rebalancing.
-    - **Portfolio Rebalancing**: Handle risk-based portfolio rebalancing and position sizing.
-    - **Cross-Asset Strategies**: Test and compare strategies that span multiple asset types.
-
-4. **Scalability and Parallelization (Future Expansion)**
-    - Support for parallel backtesting of multiple strategies or long time horizons, ideal for computationally intensive strategies.
-    - **Parallelization**: Use Python’s `multiprocessing` to distribute backtests across multiple cores.
-
-5. **Strategy Debugging and Step-by-Step Simulation**
-    - Implement a detailed debugging mode to help users step through each decision and inspect variables in real-time.
-    - **Conditional Breakpoints**: Pause the backtest when predefined conditions are met.
-    - **Detailed Logs**: Generate logs for each trade decision, including rationale and market data at the time.
-
-6. **Advanced Risk Management and Hedging**
-    - Offer dynamic risk management tools like stop-loss orders, trailing stops, and support for complex hedging strategies using options and futures.
-    - **Dynamic Position Sizing**: Adjust positions based on volatility, drawdown, or VaR.
-
-7. **Extensive Documentation and Example Library**
-    - Provide detailed documentation, tutorials, and example notebooks to help users implement their own strategies.
-    - **Interactive Tutorials**: Jupyter notebooks walking users through creating, testing, and refining strategies.
-
 ## Installation
 
 To install the backtester, run:
