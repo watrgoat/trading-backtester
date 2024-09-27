@@ -48,11 +48,11 @@ To install the backtester, run:
 git clone https://github.com/yourusername/backtester.git
 cd backtester
 pip install -r requirements.txt
-Getting Started
-Here's an example of a basic backtest using the modular architecture:
 ```
 
-## Example
+Getting Started
+Here's an example of a basic backtest using the modular architecture:
+
 ```python
 from backtester import Backtester, Strategy, DataHandler, ExecutionHandler, RiskManager
 
